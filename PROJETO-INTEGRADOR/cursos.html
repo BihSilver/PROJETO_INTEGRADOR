@@ -1,11 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head> 
-    <style>h2 {
-        color:blue;
-    } </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center; 
+            justify-content: space-between; 
+            padding: 10px;
+            background-color: #1f80d5;
+        }
+
+        nav {
+            display: flex;
+            align-items: flex-start; 
+        }
+
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .logo {
+            margin-right: auto; 
+        }
+        
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      cursor: pointer;
+      font-size: 30px;
+      color: #ccc;
+    }
+
+    .rating label:hover,
+    .rating label:hover ~ label,
+    .rating input:checked ~ label {
+      color: #fdd835;
+    }
+
+    .comment {
+      width: 100%;
+      margin: 10px 0;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .submit-btn {
+      background-color: #1f80d5;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+  
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+      }
+  
+      h2 {
+        color: #333;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+      }
+  
+      .generate-btn {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+  
+      #certificate {
+        display: none;
+        margin-top: 20px;}
+        {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .course-details {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .course-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #777;
+    }
+    </style>
+      
     <title>Tela 03</title>
-    <img src="logo.jpeg" width="120" height="100"/>
+<header>
+    <div class="logo"><img src="/src/botoes/button_logo (1).png" alt="LOGO"></div>
+    <nav>
+        <a href="/index.html"><img src="/src/img/inicio1.PNG"></a>
+        <a href="/vagas.html"><img src="/src/img/vagas1.PNG" ></a>
+        <a href="/cursos.html"><img src="/src/img/cursos1.PNG"></a>
+        <a href="/notificacoes.html"><img src="/src/img/notificacoes1.PNG"></a>
+        <a href="/perfil.html"><img src="/src/img/perfil1.PNG"></a>
+        
+    </nav>
+</header>
+
+
+<body>
     <label for="filtro">Filtrar</label>
     <select name="filtro" id="filtro">
       <option value="Meus cursos">Meus cursos</option>
@@ -15,17 +195,54 @@
       <option value="Nivel">Nivel</option>
     </select>
     <input type="selecionar" value="Pesquisar" />
-</head>    
-<body>
-    <h2>Curso 1545#</h2>
-    <br>
-    <button>Nome do Curso</button>
-    <button>Seu feedback</button>
+
+    <div class="course-details">
+    
+   
+        <img class="course-image" src="caminho/para/sua/imagem.jpg" alt="Imagem do Curso">
+        <h2>Nome do Curso</h2>
+        <p>Quantidade de Alunos: 2500</p>
+          
+          </div
+        
+          </
+         
+        </div>
+        </
+            <br>
     <button>Matricular agora</button> 
     <br>
-    <button>Modulo 01</button>
-    <button>Modulo 02</button>
-    <button>Modulo 03</button>
+    <div class="container">
+         
+        <h2>Avalie o curso</h2>
+        <form action="#" method="post">
+        <div class="rating">
+               
+        <input type="radio" id="star5" name="rating" value="5"> 
+        <label for="star5">★</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">★</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">★</label>
+        <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">★</label>
+        </div> 
+        <textarea class="comment" placeholder="Deixe um comentário..." name="comment" rows="4"></textarea>
+        <input class="submit-btn" type="submit" value="Enviar Avaliação">
+        <main> 
+            <div class="module"> 
+            <a href="modulo1.html">Módulo 1: Introdução ao Curso</a>
+            </div>
+            <div class="module">
+            <a href="modulo2.html">Módulo 2: Tópicos Avançados</a>
+                </div
+             class="module">
+            <a href="modulo3.html">Módulo 3: Projeto Prático</a>
+                </div
+                >
     <br>
     <br>
     <br>
@@ -36,7 +253,26 @@
     <br>
     <button>Sobre</button>
     <br>
-    <button>Gerar Certificado</button>
-
+      <div class="container">
+        <h2>Emitir Certificado</h2>
+        <form action="#" method="post" id="certificateForm">
+      <label for="userName">Nome:</label>
+      <input type="text" id="userName" name="userName" required>
+      <button class="generate-btn" type="button" onclick="generateCertificate()">Emitir Certificado</button>
+      <div id="certificate">
+        </script>
+      
+<h2>Informações sobre o Curso</h2>
+<p>Este curso oferece uma abordagem abrangente sobre os tópicos abordados, proporcionando uma experiência de aprendizado valiosa.</p>
+    </div
+ Contato
+<p>Email: info@seucurso.com</p>
+<p>Telefone: (XX) XXXX-XXXX</p>
+    </div
+ href="sobre-nos.html">Sobre Nós</a>
+      <br>
+<a href="politica-privacidade.html">Política de Privacidade</a>
+    </div
+    
 </body>    
 </html>
